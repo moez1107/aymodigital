@@ -4,8 +4,8 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
+    "dev": "node init && vite dev",
+    "build": "node init && vite build",
     "vercel-build": "vite build",
     "preview": "vite preview"
   },
