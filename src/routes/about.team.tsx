@@ -26,16 +26,118 @@ type Member = {
 };
 
 const team: Member[] = [
-  { name: "Ayan M. Osman", role: "Founder & CEO", group: "Leadership", bio: "Building global brands across USA, UK and UAE. 8+ years in agency growth.", initials: "AO", color: "from-primary to-[oklch(0.55_0.14_230)]" },
-  { name: "Mariam Ali", role: "Chief Operating Officer", group: "Leadership", bio: "Operations & client success lead. Scaled 3 agencies past 7-figures.", initials: "MA", color: "from-fuchsia-500 to-pink-600" },
-  { name: "Hassan Raza", role: "Head of Growth Marketing", group: "Marketing", bio: "Paid media strategist. $12M+ in tracked ad spend managed across Meta & Google.", initials: "HR", color: "from-amber-400 to-orange-500" },
-  { name: "Sara Khan", role: "Content Director", group: "Marketing", bio: "YouTube and short-form strategist. Built 4 channels past 1M subscribers.", initials: "SK", color: "from-rose-500 to-red-600" },
-  { name: "Bilal Iqbal", role: "Lead Full-Stack Engineer", group: "Engineering", bio: "Builds scalable web apps in TypeScript, React and Node.", initials: "BI", color: "from-sky-500 to-blue-600" },
-  { name: "Areeba Tariq", role: "Senior Frontend Engineer", group: "Engineering", bio: "Design-systems and accessibility specialist.", initials: "AT", color: "from-emerald-500 to-teal-600" },
-  { name: "Daniyal Sheikh", role: "AI Automation Lead", group: "AI Automation", bio: "Designs end-to-end AI workflows in Make, n8n and custom Python.", initials: "DS", color: "from-violet-500 to-indigo-600" },
-  { name: "Zara Yousaf", role: "Conversational AI Specialist", group: "AI Automation", bio: "Builds chatbots and voice agents on OpenAI and Anthropic.", initials: "ZY", color: "from-cyan-500 to-sky-600" },
-];
+  // =====================
+  // 👑 LEADERSHIP
+  // =====================
+  {
+    name: "Ayesha Tabassum",
+    role: "Founder & CEO",
+    group: "Leadership",
+    bio: "Building global brands across USA, UK and UAE. 8+ years in agency growth.",
+    initials: "AT",
+    color: "from-primary to-[oklch(0.55_0.14_230)]",
+  },
+  {
+    name: "Mariam Ali",
+    role: "Chief Operating Officer",
+    group: "Leadership",
+    bio: "Operations & client success lead. Scaled 3 agencies past 7-figures.",
+    initials: "MA",
+    color: "from-fuchsia-500 to-pink-600",
+  },
+  {
+    name: "Anaya Shah",
+    role: "Chief Strategy Officer",
+    group: "Leadership",
+    bio: "Drives business strategy, partnerships and long-term growth planning.",
+    initials: "AS",
+    color: "from-indigo-500 to-purple-600",
+  },
 
+  // =====================
+  // 📣 MARKETING
+  // =====================
+  {
+    name: "Hina Batool",
+    role: "Head of Growth Marketing",
+    group: "Marketing",
+    bio: "Paid media strategist. $12M+ ad spend managed across Meta & Google.",
+    initials: "HB",
+    color: "from-amber-400 to-orange-500",
+  },
+  {
+    name: "Sara Khan",
+    role: "Content Director",
+    group: "Marketing",
+    bio: "YouTube and short-form strategist. Built multiple channels past 1M subscribers.",
+    initials: "SK",
+    color: "from-rose-500 to-red-600",
+  },
+  {
+    name: "Laiba Hassan",
+    role: "Social Media Manager",
+    group: "Marketing",
+    bio: "Manages viral content strategies across Instagram, TikTok and LinkedIn.",
+    initials: "LH",
+    color: "from-pink-500 to-rose-500",
+  },
+
+  // =====================
+  // 💻 ENGINEERING
+  // =====================
+  {
+    name: "Taniya Malik",
+    role: "Lead Full-Stack Engineer",
+    group: "Engineering",
+    bio: "Builds scalable web apps in TypeScript, React and Node.",
+    initials: "TM",
+    color: "from-sky-500 to-blue-600",
+  },
+  {
+    name: "Areeba Tariq",
+    role: "Senior Frontend Engineer",
+    group: "Engineering",
+    bio: "Design systems and accessibility specialist.",
+    initials: "AT",
+    color: "from-emerald-500 to-teal-600",
+  },
+  {
+    name: "Iqra Nadeem",
+    role: "Backend Engineer",
+    group: "Engineering",
+    bio: "Builds secure APIs, databases and scalable backend systems.",
+    initials: "IN",
+    color: "from-cyan-500 to-blue-600",
+  },
+
+  // =====================
+  // 🤖 AI AUTOMATION
+  // =====================
+  {
+    name: "Zara Yousaf",
+    role: "Conversational AI Specialist",
+    group: "AI Automation",
+    bio: "Builds chatbots and voice agents on OpenAI and Anthropic.",
+    initials: "ZY",
+    color: "from-cyan-500 to-sky-600",
+  },
+  {
+    name: "Noor Fatima",
+    role: "AI Automation Lead",
+    group: "AI Automation",
+    bio: "Designs end-to-end AI workflows using n8n, Make and Python automation.",
+    initials: "NF",
+    color: "from-violet-500 to-indigo-600",
+  },
+  {
+    name: "Hafsa Raza",
+    role: "AI Integration Engineer",
+    group: "AI Automation",
+    bio: "Integrates LLMs into real-world business systems and SaaS products.",
+    initials: "HR",
+    color: "from-fuchsia-500 to-purple-600",
+  },
+];
 const groups = ["Leadership", "Marketing", "Engineering", "AI Automation"] as const;
 
 function TeamPage() {
