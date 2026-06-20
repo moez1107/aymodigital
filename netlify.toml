@@ -1,0 +1,13 @@
+[build]
+  command = "NITRO_PRESET=netlify bun run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# TanStack Start (Nitro) handles SSR + SPA routing.
+# This fallback ensures any direct/deep-link or page refresh still resolves.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
